@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  config:
+    import: optional:secrets.yml
+  datasource:
+    driverClassName: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
