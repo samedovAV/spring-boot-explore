@@ -1,4 +1,4 @@
-FROM bellsoft/liberica-openjdk-alpine:latest
+FROM bellsoft/liberica-openjdk-alpine:21
 
 WORKDIR /app
 

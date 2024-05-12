@@ -6,7 +6,14 @@ spring:
     import: optional:secrets.yml
   datasource:
     driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/references
+    password: postgres
+    username: postgres
   jpa:
     show-sql: true
     hibernate:
       ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  docker:
+    compose:
+      enabled: true
