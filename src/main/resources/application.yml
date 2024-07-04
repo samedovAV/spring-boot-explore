@@ -17,3 +17,10 @@ spring:
   docker:
     compose:
       enabled: true
+  mail:
+    host: localhost
+    port: 25
+    properties:
+      mail:
+        smtp:
+          auth: false
